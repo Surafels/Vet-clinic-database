@@ -15,11 +15,14 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - [📖 About the Project](#about-project)
     - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage](#usage)
   - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -41,9 +44,12 @@ This repository includes files with plain SQL that can be used to recreate a dat
   </ul>
 </details>
 
-## 💻 Getting Started <a name="getting-started"></a>
+### Key Features <a name="key-features"></a>
+- **queries for the different quests**
 
-> Describe how a new developer could make use of your project.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
@@ -64,6 +70,7 @@ Using SQL shell(psql) or pgAdmin:
 
 Create the database and animals table using the commands from schema.sql Insert sample data from data.sql Query inserted data using sample queries in 'queries.sql'
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -72,6 +79,12 @@ Create the database and animals table using the commands from schema.sql Insert 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Animal tables**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
