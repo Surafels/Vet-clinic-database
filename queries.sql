@@ -50,11 +50,11 @@ GROUP BY neutered
 ORDER BY total_escape_attempts DESC
 LIMIT 1;
 
-SELECT animal_type, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
+SELECT species, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
 FROM animals
 GROUP BY animal_type;
 
-SELECT animal_type, AVG(escape_attempts) AS average_escape_attempts
+SELECT species, AVG(escape_attempts) AS average_escape_attempts
 FROM animals
 WHERE EXTRACT(YEAR FROM date_of_birth) BETWEEN 1990 AND 2000
-GROUP BY animal_type;
+GROUP BY species;
