@@ -12,11 +12,10 @@ This repository includes files with plain SQL that can be used to recreate a dat
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 About the Project](#about-project)
-    - [🛠 Built With ](#-built-with-)
+- [📖 \[vet clinic database\] ](#-vet-clinic-database-)
+  - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -93,7 +92,7 @@ Create the database and animals table using the commands from schema.sql Insert 
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]([../../issues/](https://github.com/Surafels/Vet-clinic-database/issues)).
+Feel free to check the [issues page](https://github.com/Surafels/Vet-clinic-database/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
