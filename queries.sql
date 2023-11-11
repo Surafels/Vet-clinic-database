@@ -177,10 +177,10 @@ JOIN vets AS vet ON v.vet_id = vet.id
 WHERE vet.name = 'Stephanie Mendez'
   AND v.visit_date BETWEEN '2020-04-01' AND '2020-08-30';
 
-  SELECT a.name AS animal_name, COUNT(v.animal_id) AS visit_count
+ SELECT a.name AS animal_name, COUNT(v.animal_id) AS visit_count
 FROM visits AS v
 JOIN animals AS a ON v.animal_id = a.id
-GROUP BY v.animal_id
+GROUP BY a.name, v.animal_id
 ORDER BY visit_count DESC
 LIMIT 1;
 
@@ -204,12 +204,12 @@ JOIN vets ON visits.vet_id = vets.id
 ORDER BY visits.visit_date DESC
 LIMIT 1;
 
-SELECT COUNT(*) AS mismatched_specialties_count
-FROM visits AS vi
-JOIN vets AS v ON vi.vet_id = v.id
-JOIN animals AS a ON vi.animal_id = a.id
-JOIN specializations AS sp ON v.id = sp.vet_id AND a.species_id = sp.species_id
-WHERE sp.vet_id IS NULL;
+SELECT COUNT(*) AS num_visits_without_specialization
+FROM visits
+JOIN animals ON visits.animal_id = animals.id
+JOIN vets ON visits.vet_id = vets.id
+LEFT JOIN specializations ON vets.id = specializations.vet_id AND animals.species_id = specializations.species_id
+WHERE specializations.vet_id IS NULL;
 
 SELECT species.name AS recommended_specialty, COUNT(*) AS num_visits
 FROM visits
